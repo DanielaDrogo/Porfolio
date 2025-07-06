@@ -14,31 +14,36 @@ header{
     
 }
 
-/* #toggle{
+.modoOscuroIcono{
+    margin: 8px;
+}
+
+#toggle{
     display: none;
-} */
+}
 
 #label_toggle{
     font-size: 35px;
-    color: #ffd23d;
+    color: #ee82ee;
     cursor: pointer;
 } 
 
-/* #menu-toggle {
+#menu-toggle {
     display: none;
-} */
+}
 
 #foto_perfil{
     width: 150px;
     height: 150px;
     margin-right: 25%;
     margin-top: 30px;
+    border-radius: 50%;
 }
 
 #perfil{
     width: 100%;
     height: 100%;
-    
+    border-radius: 50%;
 }
 
 /* MAIN */
@@ -99,3 +104,9 @@ h2{
 .contacto_link{
     margin-right: 20px;
 }
+
+a:hover {
+    color: #ff6565;
+    text-decoration: underline;
+    transition: color 0.2s;
+} 
