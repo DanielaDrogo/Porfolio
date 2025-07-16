@@ -18,13 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('main')?.classList.toggle('dark_main', enabled);
         document.querySelector('footer')?.classList.toggle('dark_footer', enabled);
         document.querySelector('nav')?.classList.toggle('dark_nav', enabled);
-        document.querySelectorall('a')?.classList.toggle('dark_link', enabled);
-        document.querySelectorall('.svg_icono')?.classList.toggle('dark_icono', enabled);
 
-        // Cambia el color del link
-        document.querySelectorAll('.indice_link').forEach(enlace => {
-            enlace.classList.toggle('dark_link', enabled);
+        document.querySelectorAll('.svg_icono')?.forEach(icono => {
+            icono.classList.toggle('dark_icono', enabled);
         });
+
+        document.querySelectorAll('.link_main').forEach(a => a.classList.toggle('dark_link', enabled));
     };
 
     // Aplicar la preferencia guardada en el local storage
