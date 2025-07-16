@@ -178,11 +178,17 @@ h2{
     margin-right: 5px;
 }
 
+.svg_icono{
+    fill: invert(0);
+}
+
 a:hover {
     color: #ff6565;
     text-decoration: underline;
     transition: color 0.2s;
 } 
+
+
 
 /* FOOTER */
 
@@ -225,6 +231,13 @@ footer p {
     color: #b669ff;
 }
 
+.dark_icono {
+    filter: invert(1);
+}
+
+body, .dark_main, .dark_header, .dark_footer, .dark_nav, .seccion, .proyectos_lista, .contacto_link {
+    transition: background 0.5s, color 0.5s;
+}
 
 
 /* menu hamburguesa */
