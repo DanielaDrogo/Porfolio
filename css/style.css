@@ -130,6 +130,16 @@ h2{
     margin: 20px;
 }
 
+.lista_tecnologias{
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.tecnologia{
+    display: flex;
+    align-items: center;
+    
+}
 
 .tecnologia_icono{
     width: 40px;
@@ -186,3 +196,114 @@ footer p {
     margin: 0;
 }
 
+
+
+
+/* Modo oscuro */
+
+
+
+
+
+
+
+/* Oculta el botón hamburguesa en escritorio */
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #370064;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2000;
+}
+
+/* Responsive: muestra el botón y oculta el menú lateral */
+@media (max-width: 800px) {
+    nav {
+        position: fixed;
+        left: -300px;
+        top: 0;
+        width: 200px;
+        height: 100vh;
+        background: #781cce;
+        transition: left 0.3s;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
+    nav.open {
+        left: 0;
+    }
+    #menu-toggle {
+        display: block;
+    }
+    .menuYcontenido {
+        flex-direction: column;
+    }
+    .contenido {
+        padding-left: 0;
+    }
+
+    .perfil {
+        display: none;
+        justify-content: center;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+        margin-inline: 20px;
+    }
+
+    .estudios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lista_tecnologias {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tecnologia {
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .proyectos_lista {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .proyecto_imagen {
+        margin: 10px;
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .contacto_link {
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

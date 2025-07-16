@@ -39,4 +39,48 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('darkMode', checked);
         });
     }
+
+
+    // // Menú hamburguesa
+    // const menuToggle = document.getElementById('menu-toggle');
+    // const nav = document.querySelector('.menu nav');
+    // if (menuToggle && nav) {
+    //     menuToggle.addEventListener('click', () => {
+    //         nav.classList.toggle('open');
+    //     });
+    //     // Opcional: cerrar menú al hacer click en un enlace
+    //     nav.querySelectorAll('a').forEach(link => {
+    //         link.addEventListener('click', () => {
+    //             nav.classList.remove('open');
+    //         });
+    //     });
+    // }
+
+});
+
+
+
+
+
+
+
+
+// MENU RESPONSIVO //
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Menú hamburguesa
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.querySelector('.menu nav');
+    if (menuToggle && nav) {
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('open');
+        });
+        // Opcional: cerrar menú al hacer click en un enlace
+        nav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('open');
+            });
+        });
+    }
 });
