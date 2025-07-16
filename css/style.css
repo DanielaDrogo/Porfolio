@@ -201,13 +201,33 @@ footer p {
 
 /* Modo oscuro */
 
+.dark_header {
+    background-color: #32005a;
+}
+
+.dark_main {
+    background-color: #100016;
+    color: white;
+}
+.dark_footer {
+    background-color: #32005a;
+    color: white;
+}
+.dark_nav {
+    background-color: #370064;
+    color: white;
+}
+
+.dark_link {
+    color: white;
+}
+.dark_link:visited {
+    color: #b669ff;
+}
 
 
 
-
-
-
-/* Oculta el botón hamburguesa en escritorio */
+/* menu hamburguesa */
 #menu-toggle {
     display: none;
     background: none;

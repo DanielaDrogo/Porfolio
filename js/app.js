@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('header')?.classList.toggle('dark_header', enabled);
         document.querySelector('main')?.classList.toggle('dark_main', enabled);
         document.querySelector('footer')?.classList.toggle('dark_footer', enabled);
+        document.querySelector('nav')?.classList.toggle('dark_nav', enabled);
+        document.querySelector('a')?.classList.toggle('dark_link', enabled);
 
         // Cambia el color del link
         document.querySelectorAll('.indice_link').forEach(enlace => {
@@ -41,27 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // // Menú hamburguesa
-    // const menuToggle = document.getElementById('menu-toggle');
-    // const nav = document.querySelector('.menu nav');
-    // if (menuToggle && nav) {
-    //     menuToggle.addEventListener('click', () => {
-    //         nav.classList.toggle('open');
-    //     });
-    //     // Opcional: cerrar menú al hacer click en un enlace
-    //     nav.querySelectorAll('a').forEach(link => {
-    //         link.addEventListener('click', () => {
-    //             nav.classList.remove('open');
-    //         });
-    //     });
-    // }
-
 });
-
-
-
-
-
 
 
 
