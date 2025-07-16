@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('main')?.classList.toggle('dark_main', enabled);
         document.querySelector('footer')?.classList.toggle('dark_footer', enabled);
         document.querySelector('nav')?.classList.toggle('dark_nav', enabled);
-        document.querySelector('a')?.classList.toggle('dark_link', enabled);
-        document.querySelector('.svg_icono')?.classList.toggle('dark_icono', enabled);
+        document.querySelectorall('a')?.classList.toggle('dark_link', enabled);
+        document.querySelectorall('.svg_icono')?.classList.toggle('dark_icono', enabled);
 
         // Cambia el color del link
         document.querySelectorAll('.indice_link').forEach(enlace => {
