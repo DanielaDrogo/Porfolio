@@ -33,14 +33,6 @@ header{
     display: none;
 }
 
-/* #foto_perfil{
-    width: 150px;
-    height: 150px;
-    margin-right: 25%;
-    margin-top: 30px;
-    border-radius: 50%;
-} */
-
 #foto_perfil {
     width: 150px;
     height: 150px;
@@ -155,6 +147,10 @@ h2{
     width: 40px;
     height: 40px;
     margin-right: 10px;
+}
+
+.proyectos_lista {
+    margin-top: 20px;
 }
 
 .proyecto_imagen{
@@ -397,12 +393,12 @@ body, .dark_main, .dark_header, .dark_footer, .dark_nav, .seccion, .proyectos_li
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 30px;
         margin-bottom: 50px;
     }
 
     .proyecto_imagen {
-        margin: 10px;
+        margin: 30px;
         width: 80%;
         max-width: 300px;
         height: auto;
