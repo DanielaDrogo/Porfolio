@@ -170,6 +170,7 @@ h2{
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-decoration: none;
 }
 
 .contacto_icono{
@@ -178,19 +179,28 @@ h2{
     margin-right: 5px;
     font-size: 30px;
     transition: color 0.3s;
-    
+    text-decoration: none;
+}
+
+.contacto_link span {
+    text-decoration: underline;
 }
 
 .svg_icono{
-    color: black;
-    
+    color: black; 
 }
 
 a:hover {
     color: #ff6565;
-    text-decoration: underline;
     transition: color 0.2s;
 } 
+
+a:visited:hover{
+    color: #ff6565;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
 
 
 
@@ -202,6 +212,22 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+.footer_contenedor {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contenido_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 80px;
+}
+
 footer p {
     margin: 0;
 }
@@ -228,6 +254,15 @@ footer .contacto_lista {
     fill: white;
 
 }
+
+.div_escondidoFooter {
+    width: 300px;
+    height: 100%;
+
+    background-color: #781cce00;
+}
+
+
 
 
 /* Modo oscuro */
