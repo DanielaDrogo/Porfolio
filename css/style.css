@@ -33,12 +33,22 @@ header{
     display: none;
 }
 
-#foto_perfil{
+/* #foto_perfil{
     width: 150px;
     height: 150px;
     margin-right: 25%;
     margin-top: 30px;
     border-radius: 50%;
+} */
+
+#foto_perfil {
+    width: 150px;
+    height: 150px;
+    margin: 30px auto 0 60%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #perfil{
