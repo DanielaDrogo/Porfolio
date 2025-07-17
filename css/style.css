@@ -409,6 +409,7 @@ body, .dark_main, .dark_header, .dark_footer, .dark_nav, .seccion, .proyectos_li
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
         margin-top: 30px;
         margin-bottom: 50px;
     }
@@ -420,10 +421,21 @@ body, .dark_main, .dark_header, .dark_footer, .dark_nav, .seccion, .proyectos_li
         height: auto;
     }
 
+    #contactos_lista {
+        display: flex;
+        justify-content: center;
+        
+    }
+
     .contacto_link {
         margin: 10px;
         display: flex;
         align-items: center;
         flex-direction: column;
     }
+
+    .contenido_footer{
+        padding: 0;
+    }
+
 }
