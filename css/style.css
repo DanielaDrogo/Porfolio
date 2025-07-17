@@ -176,10 +176,14 @@ h2{
     width: 30px;
     height: 30px;
     margin-right: 5px;
+    font-size: 30px;
+    transition: color 0.3s;
+    
 }
 
 .svg_icono{
-    fill: invert(0);
+    color: black;
+    
 }
 
 a:hover {
@@ -219,6 +223,11 @@ footer p {
     background-color: #32005a;
     color: white;
 }
+
+body.dark #menu-toggle {
+    color: white;
+}
+
 .dark_nav {
     background-color: #370064;
     color: white;
@@ -232,7 +241,7 @@ footer p {
 }
 
 .dark_icono {
-    filter: invert(1);
+    color: white;
 }
 
 body, .dark_main, .dark_header, .dark_footer, .dark_nav, .seccion, .proyectos_lista, .contacto_link {
