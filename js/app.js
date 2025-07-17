@@ -4,8 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let toggle = document.getElementById('toggle');
     let label_toggle = document.getElementById('label_toggle');
 
-    // Leer la preferencia del modo del local storage
-    let darkMode = localStorage.getItem('darkMode') === 'true';
+    // Leer la preferencia del modo del local storage (modo claro por defecto)
+    let darkMode = localStorage.getItem('darkMode') === null ? false : localStorage.getItem('darkMode') === 'true';
+    
     
     // Función para aplicar el modo oscuro
     const applyDarkMode = (enabled) => {
@@ -41,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('darkMode', checked);
         });
     }
-
 
 });
 
