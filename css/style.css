@@ -326,6 +326,22 @@ body, .dark_main, .dark_header, .dark_footer, .dark_nav, .seccion, .proyectos_li
 
 /* Responsive: muestra el botón y oculta el menú lateral */
 @media (max-width: 800px) {
+
+    #foto_perfil {
+
+        margin: 25px 60px 0 auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #perfil {
+        display: block;
+    }
+
     nav {
         position: fixed;
         left: -300px;
