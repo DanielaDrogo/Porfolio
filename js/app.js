@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const applyDarkMode = (enabled) => {
         document.body.classList.toggle('dark', enabled);
         label_toggle.innerHTML = enabled ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
-        label_toggle.style.color = enabled ? "gold" : "violet";
+        label_toggle.style.color = enabled ? "gold" : "pink";
 
         
         document.querySelector('header')?.classList.toggle('dark_header', enabled);
