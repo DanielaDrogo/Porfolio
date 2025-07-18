@@ -56,12 +56,17 @@ header{
     display: flex;
     flex-direction: row;
 
+    
+
 }
 
 nav{
     height: 100vh;
     width: 200px;
     background-color:#781cce;
+    box-shadow: 10px 0px 11px 0px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 10px 0px 11px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 10px 0px 11px 0px rgba(0,0,0,0.55);
     padding-inline: 40px;  
     position: fixed;
     top: 0;
@@ -97,7 +102,7 @@ nav{
     padding-top: 80px;
 }
 
-.seccion{
+section{
     margin-bottom: 150px;
 }
 
