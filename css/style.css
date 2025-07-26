@@ -50,15 +50,17 @@ header{
     object-fit: cover;
 }
 
+
 /* MAIN */
 
 .menuYcontenido{
     display: flex;
     flex-direction: row;
 
-    
-
 }
+
+
+/* menu lateral */
 
 nav{
     height: 100vh;
@@ -97,6 +99,19 @@ nav{
     background-color: #781cce00;
 }
 
+/* ------ */
+
+@keyframes aparecerSeccion {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(10px);
+    }
+}
+
 .contenido{
     padding-left: 80px;
     padding-top: 80px;
@@ -110,11 +125,24 @@ section{
 h1{
     margin-bottom: 50px;
     font-family: 'Poppins', sans-serif;
+    animation: aparecerSeccion 0.8s ease-in-out;
 }
 
 h2{
     margin-bottom: 20px;
-    
+    animation: aparecerSeccion 0.9s ease-in-out;
+}
+
+p{
+    animation: aparecerSeccion 1.3s ease-in-out;
+}
+
+
+
+/* seccion estudios */
+
+.seccion_formacionYhabilidades {
+    animation: aparecerSeccion 1s ease-in-out;
 }
 
 .estudios {
@@ -137,6 +165,8 @@ h2{
     margin: 20px;
 }
 
+/* seccion tecnologias */
+
 .lista_tecnologias{
     margin-top: 20px;
     margin-left: 5px;
@@ -154,8 +184,11 @@ h2{
     margin-right: 10px;
 }
 
+/* seccion proyectos */
+
 .proyectos_lista {
     margin-top: 20px;
+    animation: aparecerSeccion 1.1s ease-in-out;
 }
 
 .proyecto_imagen{
@@ -167,13 +200,18 @@ h2{
 
 .proyecto_imagen:hover{
     border-color: #ff006a;
+    /* transform: scale(0); */
     border-style: solid;
+    border-width: 2px;
+    transition: border-color 2.5s;
 }
+
+/* seccion contactos */
 
 #contactos_lista{
     display: flex;
     flex-direction:row;
-    
+    animation: aparecerSeccion 1.1s ease-in-out;
 }
 
 .contacto_link{
@@ -249,6 +287,7 @@ footer a {
 }
 footer a:hover {
     color: wheat;
+    transition: color 0.3s;
     text-decoration: underline;
 }
 
@@ -276,7 +315,7 @@ footer .contacto_lista {
 
 
 
-/* Modo oscuro */
+/* MODO OSCURO */
 
 .dark_header {
     background-color: #32005a;
@@ -329,11 +368,10 @@ body, .dark_main, .dark_header, .dark_footer, .dark_nav, .seccion, .proyectos_li
     z-index: 2000;
 }
 
-/* Responsive: muestra el botón y oculta el menú lateral */
+/* RESPONSIVE */
 @media (max-width: 800px) {
 
     #foto_perfil {
-
         margin: 25px 60px 0 auto;
         align-items: center;
         display: flex;
@@ -354,7 +392,7 @@ body, .dark_main, .dark_header, .dark_footer, .dark_nav, .seccion, .proyectos_li
         width: 200px;
         height: 100vh;
         background: #781cce;
-        transition: left 0.3s;
+        transition: left 0.10s;
         flex-direction: column;
         align-items: center;
         justify-content: center;
