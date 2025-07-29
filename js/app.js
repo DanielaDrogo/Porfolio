@@ -66,3 +66,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+
+
+
+
+
+// ANIMACIONES SCROLL // 
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            entry.target.classList.remove('oculto');
+        }
+    });
+});
+
+document.querySelectorAll('h1, h2, p, .seccion_formacionYhabilidades, .proyectos_lista, #contactos_lista')
+    .forEach(el => {
+        el.classList.add('oculto');
+        observer.observe(el, { once: true });
+    });
+
+

@@ -105,12 +105,26 @@ nav{
     from {
         opacity: 0;
         transform: translateX(100px);
+        
     }
     to {
         opacity: 1;
         transform: translateX(10px);
+        
     }
 }
+
+.oculto {
+    opacity: 0;
+    transform: translateX(100px);
+}
+.visible {
+    animation: aparecerSeccion 0.8s ease-in-out forwards;
+}
+
+
+
+
 
 .contenido{
     padding-left: 80px;
@@ -119,31 +133,31 @@ nav{
 
 section{
     margin-bottom: 150px;
+    
 }
-
 
 h1{
     margin-bottom: 50px;
     font-family: 'Poppins', sans-serif;
-    animation: aparecerSeccion 0.8s ease-in-out;
+    /* animation: aparecerSeccion 0.8s ease-in-out; */
 }
 
 h2{
     margin-bottom: 20px;
-    animation: aparecerSeccion 0.9s ease-in-out;
+    /* animation: aparecerSeccion 0.9s ease-in-out; */
 }
 
-p{
+/* p{
     animation: aparecerSeccion 1.3s ease-in-out;
-}
+} */
 
 
 
 /* seccion estudios */
 
-.seccion_formacionYhabilidades {
+/* .seccion_formacionYhabilidades {
     animation: aparecerSeccion 1s ease-in-out;
-}
+} */
 
 .estudios {
     display: flex;
@@ -188,7 +202,7 @@ p{
 
 .proyectos_lista {
     margin-top: 20px;
-    animation: aparecerSeccion 1.1s ease-in-out;
+    /* animation: aparecerSeccion 1.1s ease-in-out; */
 }
 
 .proyecto_imagen{
@@ -211,7 +225,7 @@ p{
 #contactos_lista{
     display: flex;
     flex-direction:row;
-    animation: aparecerSeccion 1.1s ease-in-out;
+    /* animation: aparecerSeccion 1.1s ease-in-out; */
 }
 
 .contacto_link{
