@@ -147,6 +147,10 @@ h2{
     animation: aparecerSeccion 1.3s ease-in-out;
 } */
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 
 /* seccion estudios */
@@ -381,6 +385,11 @@ body, .dark_main, .dark_header, .dark_footer, .dark_nav, .seccion, .proyectos_li
 /* RESPONSIVE */
 @media (max-width: 800px) {
 
+    html, body {
+    width: 100%;
+    overflow-x: hidden;
+    }
+
     #foto_perfil {
         margin: 25px 60px 0 auto;
         align-items: center;
@@ -399,7 +408,7 @@ body, .dark_main, .dark_header, .dark_footer, .dark_nav, .seccion, .proyectos_li
         position: fixed;
         left: -300px;
         top: 0;
-        width: 200px;
+        width: 190px;
         height: 100vh;
         background: #781cce;
         transition: left 0.10s;
