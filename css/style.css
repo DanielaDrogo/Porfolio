@@ -122,17 +122,13 @@ nav{
     animation: aparecerSeccion 0.8s ease-in-out forwards;
 }
 
-
-
-
-
 .contenido{
     padding-left: 80px;
     padding-top: 80px;
 }
 
 section{
-    margin-bottom: 150px;
+    margin-bottom: 200px;
     
 }
 

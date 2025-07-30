@@ -69,10 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
-
-
 // ANIMACIONES SCROLL // 
 
 const observer = new IntersectionObserver((entries) => {
@@ -84,7 +80,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-document.querySelectorAll('h1, h2, p, .seccion_formacionYhabilidades, .proyectos_lista, #contactos_lista')
+document.querySelectorAll('section, h1, h2, p, .seccion_formacionYhabilidades, .lista_tecnologias, .proyectos_lista, #contactos_lista, .contenido_footer')
     .forEach(el => {
         el.classList.add('oculto');
         observer.observe(el, { once: true });
