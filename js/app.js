@@ -87,3 +87,5 @@ document.querySelectorAll('section, h1, h2, p, .seccion_formacionYhabilidades, .
     });
 
 
+
+

@@ -121,9 +121,13 @@ nav{
 
 .oculto {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateY(20px);
+    transition: all 0.3s ease-in-out;
 }
+
 .visible {
+    opacity: 1;
+    transform: translateY(0);
     animation: aparecerSeccion 0.8s ease-in-out forwards;
 }
 
@@ -369,6 +373,8 @@ body, .dark_main, .dark_header, .dark_footer, .dark_nav, .seccion, .proyectos_li
 }
 
 
+/* RESPONSIVE */
+
 /* menu hamburguesa */
 #menu-toggle {
     display: none;
@@ -382,7 +388,6 @@ body, .dark_main, .dark_header, .dark_footer, .dark_nav, .seccion, .proyectos_li
     z-index: 2000;
 }
 
-/* RESPONSIVE */
 @media (max-width: 800px) {
 
     html, body {
@@ -397,7 +402,6 @@ body, .dark_main, .dark_header, .dark_footer, .dark_nav, .seccion, .proyectos_li
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
     }
 
     #perfil {
