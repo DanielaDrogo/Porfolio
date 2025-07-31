@@ -160,10 +160,6 @@ img {
 
 /* seccion estudios */
 
-/* .seccion_formacionYhabilidades {
-    animation: aparecerSeccion 1s ease-in-out;
-} */
-
 .estudios {
     display: flex;
     flex-direction: row;
@@ -173,7 +169,6 @@ img {
 .logo_estudios{
     width: 100px;
     height: 100px;
-    margin-right: 10px;
 }
 
 .link_estudio{
