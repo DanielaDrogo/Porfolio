@@ -7,6 +7,11 @@
 
 /* HEADER  */
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 header{
     background-color: blueviolet;
     height: 100px;
@@ -422,6 +427,11 @@ body, .dark_main, .dark_header, .dark_footer, .dark_nav, .seccion, .proyectos_li
     }
     #menu-toggle {
         display: block;
+    }
+    .div_escondido,
+    .contenido_footer {
+        padding-left: 0;
+        width: 100%;
     }
     .menuYcontenido {
         flex-direction: column;
