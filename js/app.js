@@ -88,7 +88,9 @@ document.querySelectorAll('section, h1, h2, p, .seccion_formacionYhabilidades, .
 // animacion logo CyberCat //
 document.addEventListener('DOMContentLoaded', () => {
     const logo = document.querySelector('.footer_logo');
-    const audio = new Audio('./audios/cat-meow-8-fx-306184(mp3cut.net).mp3'); 
+    const hoverRandom = Math.floor(Math.random() * 2) + 1; // Genera un número aleatorio entre 1 y 2
+    const audio = new Audio('./audios/cat-meow-8-fx-306184(mp3cut.net).mp3');
+    hoverRandom === 1 ? logo.classList.add('footer_logo') : logo.classList.add('footer_logo2');
 
     logo.addEventListener('click', () => {
         logo.classList.add('animarGatito');

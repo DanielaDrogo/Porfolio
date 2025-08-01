@@ -345,6 +345,11 @@ footer .contacto_lista {
     transition: transform 0.3s;
 }
 
+.footer_logo2:hover{
+    rotate: 10deg;
+    transition: transform 0.3s;
+}
+
 .footer_logo.animarGatito {
     animation: rotarGatito 0.6s ease-in-out;
 }
