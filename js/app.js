@@ -3,10 +3,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     let toggle = document.getElementById('toggle');
     let label_toggle = document.getElementById('label_toggle');
-
     // Leer la preferencia del modo del local storage (modo claro por defecto)
     let darkMode = localStorage.getItem('darkMode') === null ? false : localStorage.getItem('darkMode') === 'true';
-    
     
     // Función para aplicar el modo oscuro
     const applyDarkMode = (enabled) => {
@@ -27,10 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.link_main').forEach(a => a.classList.toggle('dark_link', enabled));
     };
 
-    // Aplicar la preferencia guardada en el local storage
     if (darkMode) {
         applyDarkMode(true);
+    } else {
+        applyDarkMode(false); 
     }
+
 
     if (toggle && label_toggle) {
         toggle.checked = darkMode; // Asegurarse de que el toggle refleje la preferencia almacenada
@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('darkMode', checked);
         });
     }
-
 });
 
 
