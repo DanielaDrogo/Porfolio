@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
         applyDarkMode(false); 
     }
 
-
     if (toggle && label_toggle) {
         toggle.checked = darkMode; // Asegurarse de que el toggle refleje la preferencia almacenada
         toggle.addEventListener('change', (event) => {
@@ -85,6 +84,19 @@ document.querySelectorAll('section, h1, h2, p, .seccion_formacionYhabilidades, .
         observer.observe(el, { once: true });
     });
 
+
+// animacion logo CyberCat //
+document.addEventListener('DOMContentLoaded', () => {
+    const logo = document.querySelector('.footer_logo');
+    logo.addEventListener('click', () => {
+        logo.classList.add('animarGatito');
+
+        // Eliminar la clase después de la animación para que se pueda volver a activar
+        logo.addEventListener('animationend', () => {
+            logo.classList.remove('animarGatito');
+        }, { once: true });
+    });
+});
 
 
 

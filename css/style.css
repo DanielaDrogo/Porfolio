@@ -324,13 +324,37 @@ footer .contacto_lista {
     background-color: #781cce00;
 }
 
-/* .footer_logo {
-    width: 55px;
-    height: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
-} */
+@keyframes rotarGatito {
+    0%   { transform: rotate(10deg); }
+    25%  { transform: rotate(-10deg); }
+    50%  { transform: rotate(10deg); }
+    75%  { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.footer_logo {
+    width: 83px;
+    height: 80px;
+    margin-top: 70px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.footer_logo:hover {
+    rotate:  -10deg;
+    transition: transform 0.3s;
+}
+
+
+.footer_logo.animarGatito {
+    animation: rotarGatito 0.6s ease-in-out;
+}
+
+.footer_logo.footer_logo.animarGatito:hover{
+    rotate: 0deg;
+
+}
+
 
 
 /* MODO OSCURO */
