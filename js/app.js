@@ -88,6 +88,14 @@ document.querySelectorAll('section, h1, h2, p, .seccion_formacionYhabilidades, .
 // animacion logo CyberCat //
 document.addEventListener('DOMContentLoaded', () => {
     const logo = document.querySelector('.footer_logo');
+    const audio = new Audio('./audios/cat-meow-8-fx-306184(mp3cut.net).mp3'); 
+
+    logo.addEventListener('click', () => {
+        logo.classList.add('animarGatito');
+        audio.currentTime = 0; // reinicia el audio por si se hace click varias veces
+        audio.play();
+    });
+
     logo.addEventListener('click', () => {
         logo.classList.add('animarGatito');
 
@@ -96,6 +104,10 @@ document.addEventListener('DOMContentLoaded', () => {
             logo.classList.remove('animarGatito');
         }, { once: true });
     });
+
+    setTimeout(() => {
+            logo.classList.remove('animarGatito');
+        }, 3000);
 });
 
 
