@@ -36,6 +36,7 @@ header{
 
 #menu-toggle {
     display: none;
+    left: 10px !important;
 }
 
 #foto_perfil {
