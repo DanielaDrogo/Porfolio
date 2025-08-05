@@ -4,7 +4,6 @@
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
-
 /* HEADER  */
 
 html, body {
@@ -17,7 +16,6 @@ header{
     height: 100px;
     display: flex;
     justify-content: right;
-
 }
 
 .modoOscuroIcono{
@@ -56,15 +54,12 @@ header{
     object-fit: cover;
 }
 
-
 /* MAIN */
 
 .menuYcontenido{
     display: flex;
     flex-direction: row;
-
 }
-
 
 /* menu lateral */
 
@@ -91,7 +86,6 @@ nav{
     text-decoration: none;
     list-style-type: none;
     margin-bottom: 40px;
-
 }
 
 .link_lateral{
@@ -139,7 +133,6 @@ nav{
 
 section{
     margin-bottom: 200px;
-    
 }
 
 h1{
@@ -155,7 +148,6 @@ img {
     max-width: 100%;
     height: auto;
 }
-
 
 /* seccion estudios */
 
@@ -201,7 +193,6 @@ img {
 
 .proyectos_lista {
     margin-top: 20px;
-    /* animation: aparecerSeccion 1.1s ease-in-out; */
 }
 
 .proyecto_imagen{
@@ -213,7 +204,6 @@ img {
 
 .proyecto_imagen:hover{
     border-color: #ff006a;
-    /* transform: scale(0); */
     border-style: solid;
     border-width: 2px;
     transition: border-color 2.5s;
@@ -224,7 +214,6 @@ img {
 #contactos_lista{
     display: flex;
     flex-direction:row;
-    /* animation: aparecerSeccion 1.1s ease-in-out; */
 }
 
 .contacto_link{
@@ -263,9 +252,6 @@ a:visited:hover{
     transition: color 0.2s;
 }
 
-
-
-
 /* FOOTER */
 
 footer {
@@ -277,7 +263,6 @@ footer {
 
 .footer_contenedor {
     display: flex;
-
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -315,13 +300,11 @@ footer .contacto_lista {
     width: 23px;
     height: 23px;
     fill: white;
-
 }
 
 .div_escondidoFooter {
     width: 300px;
     height: 100%;
-
     background-color: #781cce00;
 }
 
@@ -359,8 +342,6 @@ footer .contacto_lista {
     rotate: 0deg;
 
 }
-
-
 
 /* MODO OSCURO */
 
@@ -401,9 +382,7 @@ body, .dark_main, .dark_header, .dark_footer, .dark_nav, .seccion, .proyectos_li
     transition: background 0.5s, color 0.5s;
 }
 
-
 /* RESPONSIVE */
-
 /* menu hamburguesa */
 #menu-toggle {
     display: none;
@@ -451,9 +430,11 @@ body, .dark_main, .dark_header, .dark_footer, .dark_nav, .seccion, .proyectos_li
         justify-content: center;
         z-index: 1000;
     }
+
     nav.open {
         left: 0;
     }
+
     #menu-toggle {
         display: block;
     }
@@ -466,6 +447,7 @@ body, .dark_main, .dark_header, .dark_footer, .dark_nav, .seccion, .proyectos_li
     .menuYcontenido {
         flex-direction: column;
     }
+
     .contenido {
         padding-left: 0;
     }
@@ -543,5 +525,4 @@ body, .dark_main, .dark_header, .dark_footer, .dark_nav, .seccion, .proyectos_li
     .contenido_footer{
         padding: 0;
     }
-
 }

@@ -1,5 +1,4 @@
 //  MODO OSCURO //
-
 document.addEventListener('DOMContentLoaded', () => {
     let toggle = document.getElementById('toggle');
     let label_toggle = document.getElementById('label_toggle');
@@ -12,17 +11,14 @@ document.addEventListener('DOMContentLoaded', () => {
         label_toggle.innerHTML = enabled ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
         label_toggle.style.color = enabled ? "gold" : "pink";
 
-        
         document.querySelector('header')?.classList.toggle('dark_header', enabled);
         document.querySelector('main')?.classList.toggle('dark_main', enabled);
         document.querySelector('footer')?.classList.toggle('dark_footer', enabled);
         document.querySelector('nav')?.classList.toggle('dark_nav', enabled);
-
+        document.querySelectorAll('.link_main').forEach(a => a.classList.toggle('dark_link', enabled));
         document.querySelectorAll('.svg_icono')?.forEach(icono => {
             icono.classList.toggle('dark_icono', enabled);
         });
-
-        document.querySelectorAll('.link_main').forEach(a => a.classList.toggle('dark_link', enabled));
     };
 
     if (darkMode) {
@@ -37,16 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
             let checked = event.target.checked;
             applyDarkMode(checked);
 
-            // Guardar la preferencia en el local storage
-            localStorage.setItem('darkMode', checked);
+            localStorage.setItem('darkMode', checked); // Guardar la preferencia en el local storage
         });
     }
 });
 
 
-
 // MENU RESPONSIVO //
-
 document.addEventListener('DOMContentLoaded', () => {
 
     // Menú hamburguesa
@@ -66,9 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
 // ANIMACIONES SCROLL // 
-
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -83,7 +74,6 @@ document.querySelectorAll('section, h1, h2, p, .seccion_formacionYhabilidades, .
         el.classList.add('oculto');
         observer.observe(el, { once: true });
     });
-
 
 // animacion logo CyberCat //
 document.addEventListener('DOMContentLoaded', () => {
@@ -111,6 +101,3 @@ document.addEventListener('DOMContentLoaded', () => {
             logo.classList.remove('animarGatito');
         }, 3000);
 });
-
-
-
