@@ -144,6 +144,10 @@ h2{
     margin-bottom: 20px;
 }
 
+p{
+    padding-right: 10%;
+}
+
 img {
     max-width: 100%;
     height: auto;
