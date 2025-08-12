@@ -144,7 +144,7 @@ h2{
     margin-bottom: 20px;
 }
 
-p{
+.descripciones{
     padding-right: 10%;
 }
 
@@ -255,6 +255,27 @@ a:visited:hover{
     text-decoration: underline;
     transition: color 0.2s;
 }
+
+.contenedor_CV{
+    margin-bottom: 40px;
+}
+
+.cv-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #b3004a;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #ff7cb3;
+  color: #20003d;
+}
+
 
 /* FOOTER */
 
